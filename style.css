@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Calculator-Outer-container {
+    height: 600px;
+    width: 300px;
+    background: black;
+    padding: 10px;
+    display: block;
+    border: 7px solid grey;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Calculator-Screen {
+    width: 90%;
+    height: 30%;
+    background: black;
+    padding: 8px;
+    font-size: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: white;
+    
+}
+
+.Calculator-buttons_container {
+    height: 75%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.button {
+    color: black;
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    border-radius: 50%;
+    font-weight: lighter;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    border: none;
+}
+
+#clear {
+    color: black;
+    background: #9e9e9e;
+    font-size: 1.5rem;
+}
+
+#plus-minus-equal {
+    color: black;
+    background: #9e9e9e;
+    font-size: 1.5rem;
+}
+
+#percentage {
+    color: black;
+    background: #9e9e9e;
+    font-size: 1.5rem;
+
+}
+
+#divide {
+    color: white;
+    background: orange;
+}
+
+#multiplication {
+    color: white;
+    background: orange;
+}
+
+#subtraction {
+    color: white;
+    background: orange;
+}
+
+#addition {
+    color: white;
+    background: orange;
+}
+
+#equal_to {
+    color: white;
+    background: orange;
+}
+
+#zero {
+    width: 120px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .Calculator-Outer-container {
+        display: block;
+        height: 70%;
+    }
+
+    .Calculator-Screen {
+        width: 90%;
+    }
+
+    .Calculator-buttons_container {
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+
+        .button{
+            width: 22%;
+            height: 22%;
+        }
+
+        #zero{
+            width:50%;
+        }
+        
+}
